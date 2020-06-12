@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F2DDC512493242500DC3DC8 /* BJNewsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F2DDC502493242500DC3DC8 /* BJNewsUtils.m */; };
+		4F2DDC552493264F00DC3DC8 /* BJNewsFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F2DDC542493264F00DC3DC8 /* BJNewsFont.m */; };
 		4F64D77C249323C60065FE8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F64D77B249323C60065FE8A /* AppDelegate.m */; };
 		4F64D77F249323C60065FE8A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F64D77E249323C60065FE8A /* ViewController.m */; };
 		4F64D782249323C60065FE8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F64D780249323C60065FE8A /* Main.storyboard */; };
@@ -15,6 +17,7 @@
 		4F64D78A249323CB0065FE8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F64D789249323CB0065FE8A /* main.m */; };
 		4F64D794249323CB0065FE8A /* BJNewsUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F64D793249323CB0065FE8A /* BJNewsUtilsTests.m */; };
 		4F64D79F249323CB0065FE8A /* BJNewsUtilsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F64D79E249323CB0065FE8A /* BJNewsUtilsUITests.m */; };
+		4F8D3ABF24932A6E0090ECD2 /* BJNewsDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8D3ABE24932A6E0090ECD2 /* BJNewsDevice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F2DDC4F2493242500DC3DC8 /* BJNewsUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BJNewsUtils.h; sourceTree = "<group>"; };
+		4F2DDC502493242500DC3DC8 /* BJNewsUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJNewsUtils.m; sourceTree = "<group>"; };
+		4F2DDC532493264F00DC3DC8 /* BJNewsFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BJNewsFont.h; sourceTree = "<group>"; };
+		4F2DDC542493264F00DC3DC8 /* BJNewsFont.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJNewsFont.m; sourceTree = "<group>"; };
 		4F64D777249323C60065FE8A /* BJNewsUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BJNewsUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F64D77A249323C60065FE8A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4F64D77B249323C60065FE8A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +58,8 @@
 		4F64D79A249323CB0065FE8A /* BJNewsUtilsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BJNewsUtilsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F64D79E249323CB0065FE8A /* BJNewsUtilsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJNewsUtilsUITests.m; sourceTree = "<group>"; };
 		4F64D7A0249323CB0065FE8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F8D3ABD24932A6E0090ECD2 /* BJNewsDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BJNewsDevice.h; sourceTree = "<group>"; };
+		4F8D3ABE24932A6E0090ECD2 /* BJNewsDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJNewsDevice.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +87,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F2DDC4E2493240E00DC3DC8 /* BJNewsUtils */ = {
+			isa = PBXGroup;
+			children = (
+				4F2DDC522493242900DC3DC8 /* Utils */,
+			);
+			path = BJNewsUtils;
+			sourceTree = "<group>";
+		};
+		4F2DDC522493242900DC3DC8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4F2DDC4F2493242500DC3DC8 /* BJNewsUtils.h */,
+				4F2DDC502493242500DC3DC8 /* BJNewsUtils.m */,
+				4F8D3ABD24932A6E0090ECD2 /* BJNewsDevice.h */,
+				4F8D3ABE24932A6E0090ECD2 /* BJNewsDevice.m */,
+				4F2DDC532493264F00DC3DC8 /* BJNewsFont.h */,
+				4F2DDC542493264F00DC3DC8 /* BJNewsFont.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		4F64D76E249323C60065FE8A = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +131,7 @@
 		4F64D779249323C60065FE8A /* BJNewsUtils */ = {
 			isa = PBXGroup;
 			children = (
+				4F2DDC4E2493240E00DC3DC8 /* BJNewsUtils */,
 				4F64D77A249323C60065FE8A /* AppDelegate.h */,
 				4F64D77B249323C60065FE8A /* AppDelegate.m */,
 				4F64D77D249323C60065FE8A /* ViewController.h */,
@@ -262,9 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F8D3ABF24932A6E0090ECD2 /* BJNewsDevice.m in Sources */,
 				4F64D77F249323C60065FE8A /* ViewController.m in Sources */,
 				4F64D78A249323CB0065FE8A /* main.m in Sources */,
+				4F2DDC512493242500DC3DC8 /* BJNewsUtils.m in Sources */,
 				4F64D77C249323C60065FE8A /* AppDelegate.m in Sources */,
+				4F2DDC552493264F00DC3DC8 /* BJNewsFont.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +472,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 42LRDW5LP3;
 				INFOPLIST_FILE = BJNewsUtils/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +490,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 42LRDW5LP3;
 				INFOPLIST_FILE = BJNewsUtils/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
