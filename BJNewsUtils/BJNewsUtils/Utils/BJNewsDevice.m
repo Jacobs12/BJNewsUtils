@@ -33,6 +33,38 @@
     return result;
 }
 
+/// 以屏幕宽度为依据，判断屏幕大小
++ (BJNewsScreenWidthType)screenWidthType{
+    BJNewsScreenWidthType type = BJNewsScreenWidthTypeNormal;
+    CGFloat width = [BJNewsDevice screenWidth];
+    if(width < 320.0 + 1){
+        type = BJNewsScreenWidthTypeMini;
+    }else if (width < 375.0 + 1){
+        type = BJNewsScreenWidthTypeNormal;
+    }else{
+        type = BJNewsScreenWidthTypePlus;
+    }
+    return type;
+}
+
+#pragma mark - 屏幕宽高
+
+/// 获取屏幕宽度
++ (CGFloat)screenWidth{
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    CGFloat height = [UIScreen mainScreen].bounds.size.height;
+    CGFloat result = MIN(width, height);
+    return result;
+}
+
+/// 获取屏幕高度
++ (CGFloat)screenHeight{
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    CGFloat height = [UIScreen mainScreen].bounds.size.height;
+    CGFloat result = MAX(width, height);
+    return result;
+}
+
 #pragma mark - 顶部区域
 
 /// 状态栏高度
@@ -57,6 +89,12 @@
     if([BJNewsDevice isHaveSafeArea] == YES){
         height = 34.0;
     }
+    return height;
+}
+
+/// tabbar高度
++ (CGFloat)tabBarHeight{
+    CGFloat height = 49.0 + [BJNewsDevice bottomSafeAreaHeight];
     return height;
 }
 

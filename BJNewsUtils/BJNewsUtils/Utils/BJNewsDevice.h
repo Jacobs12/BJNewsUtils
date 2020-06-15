@@ -10,6 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSInteger,BJNewsScreenWidthType) {
+    BJNewsScreenWidthTypeNormal = 100,   // 320
+    BJNewsScreenWidthTypeMini   = 101,   // 375
+    BJNewsScreenWidthTypePlus   = 102    // 414
+};
+
 @interface BJNewsDevice : NSObject
 
 /// 获取主窗口
@@ -18,6 +24,17 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - 机型判断
 /// 判断是否是刘海屏
 + (BOOL)isHaveSafeArea;
+
+/// 以屏幕宽度为依据，判断屏幕大小
++ (BJNewsScreenWidthType)screenWidthType;
+
+#pragma mark - 屏幕宽高
+
+/// 获取屏幕宽度
++ (CGFloat)screenWidth;
+
+/// 获取屏幕高度
++ (CGFloat)screenHeight;
 
 #pragma mark - 顶部区域
 
@@ -31,6 +48,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 底部安全区高度
 + (CGFloat)bottomSafeAreaHeight;
+
+/// tabbar高度
++ (CGFloat)tabBarHeight;
 
 @end
 
