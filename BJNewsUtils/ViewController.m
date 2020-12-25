@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "GXNetworking.h"
+#import "GXCahce.h"
 
 @interface ViewController ()
 
@@ -17,6 +19,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [[GXNetworking defaultManager] POSTWithHost:@"https://qa.yibenmanhua.com" headers:@{@"test":@"value"} parameters:@{@"par":@"value2"} finished:^(NSURLResponse * _Nonnull response, NSData * _Nonnull responseData) {
+        
+    } failed:^(NSURLResponse * _Nonnull response, NSData * _Nonnull responseData) {
+        
+    }];
+    GXCahce * cache = [[GXCahce alloc]initWithSuiteName:@"userinfo"];
+    [cache updateValue:@"1" withKey:@"key1"];
+//    [cache updateValue:@"123123" withKey:@"key2"];
+    NSLog(@"%@",NSHomeDirectory());
 }
 
 
