@@ -18,6 +18,16 @@
 		4F64D794249323CB0065FE8A /* BJNewsUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F64D793249323CB0065FE8A /* BJNewsUtilsTests.m */; };
 		4F64D79F249323CB0065FE8A /* BJNewsUtilsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F64D79E249323CB0065FE8A /* BJNewsUtilsUITests.m */; };
 		4F8D3ABF24932A6E0090ECD2 /* BJNewsDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8D3ABE24932A6E0090ECD2 /* BJNewsDevice.m */; };
+		8439A738259583D3009D7FD4 /* GXUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8439A737259583D3009D7FD4 /* GXUtils.m */; };
+		8439A73B259583E9009D7FD4 /* GXDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 8439A73A259583E9009D7FD4 /* GXDevice.m */; };
+		8439A74925958579009D7FD4 /* GXNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8439A74825958579009D7FD4 /* GXNetworking.m */; };
+		8439A74D25958592009D7FD4 /* GXAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8439A74C25958592009D7FD4 /* GXAppInfo.m */; };
+		84A8937F259588D300D342BA /* GXFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A8937E259588D300D342BA /* GXFont.m */; };
+		84A89383259588DE00D342BA /* GXColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A89382259588DE00D342BA /* GXColor.m */; };
+		84A8938A25958AA800D342BA /* GXShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A8938925958AA800D342BA /* GXShareManager.m */; };
+		84A8938E25958D9A00D342BA /* GXCahce.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A8938D25958D9A00D342BA /* GXCahce.m */; };
+		84A8939125958EE200D342BA /* GXSessionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A8939025958EE200D342BA /* GXSessionRequest.m */; };
+		A05DF28C3B7482EA9F2FDDED /* libPods-BJNewsUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C80C6D021A1EB7B4B08B01C0 /* libPods-BJNewsUtils.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +70,28 @@
 		4F64D7A0249323CB0065FE8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F8D3ABD24932A6E0090ECD2 /* BJNewsDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BJNewsDevice.h; sourceTree = "<group>"; };
 		4F8D3ABE24932A6E0090ECD2 /* BJNewsDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJNewsDevice.m; sourceTree = "<group>"; };
+		5EC276B0BA06F0D84F93559F /* Pods-BJNewsUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJNewsUtils.release.xcconfig"; path = "Target Support Files/Pods-BJNewsUtils/Pods-BJNewsUtils.release.xcconfig"; sourceTree = "<group>"; };
+		6DCB03E6B3D8AFB45279EC02 /* Pods-BJNewsUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJNewsUtils.debug.xcconfig"; path = "Target Support Files/Pods-BJNewsUtils/Pods-BJNewsUtils.debug.xcconfig"; sourceTree = "<group>"; };
+		8439A736259583D3009D7FD4 /* GXUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXUtils.h; sourceTree = "<group>"; };
+		8439A737259583D3009D7FD4 /* GXUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXUtils.m; sourceTree = "<group>"; };
+		8439A739259583E9009D7FD4 /* GXDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXDevice.h; sourceTree = "<group>"; };
+		8439A73A259583E9009D7FD4 /* GXDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXDevice.m; sourceTree = "<group>"; };
+		8439A74725958579009D7FD4 /* GXNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXNetworking.h; sourceTree = "<group>"; };
+		8439A74825958579009D7FD4 /* GXNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXNetworking.m; sourceTree = "<group>"; };
+		8439A74B25958592009D7FD4 /* GXAppInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXAppInfo.h; sourceTree = "<group>"; };
+		8439A74C25958592009D7FD4 /* GXAppInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXAppInfo.m; sourceTree = "<group>"; };
+		84A8937D259588D300D342BA /* GXFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXFont.h; sourceTree = "<group>"; };
+		84A8937E259588D300D342BA /* GXFont.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXFont.m; sourceTree = "<group>"; };
+		84A89381259588DE00D342BA /* GXColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXColor.h; sourceTree = "<group>"; };
+		84A89382259588DE00D342BA /* GXColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXColor.m; sourceTree = "<group>"; };
+		84A89386259589C600D342BA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		84A8938825958AA800D342BA /* GXShareManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXShareManager.h; sourceTree = "<group>"; };
+		84A8938925958AA800D342BA /* GXShareManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXShareManager.m; sourceTree = "<group>"; };
+		84A8938C25958D9A00D342BA /* GXCahce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXCahce.h; sourceTree = "<group>"; };
+		84A8938D25958D9A00D342BA /* GXCahce.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXCahce.m; sourceTree = "<group>"; };
+		84A8938F25958EE200D342BA /* GXSessionRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXSessionRequest.h; sourceTree = "<group>"; };
+		84A8939025958EE200D342BA /* GXSessionRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXSessionRequest.m; sourceTree = "<group>"; };
+		C80C6D021A1EB7B4B08B01C0 /* libPods-BJNewsUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BJNewsUtils.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A05DF28C3B7482EA9F2FDDED /* libPods-BJNewsUtils.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,9 +120,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		089A06435DB50BFD90800A1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DCB03E6B3D8AFB45279EC02 /* Pods-BJNewsUtils.debug.xcconfig */,
+				5EC276B0BA06F0D84F93559F /* Pods-BJNewsUtils.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4F2DDC4E2493240E00DC3DC8 /* BJNewsUtils */ = {
 			isa = PBXGroup;
 			children = (
+				8439A7342595836E009D7FD4 /* 光线 */,
 				4F2DDC522493242900DC3DC8 /* Utils */,
 			);
 			path = BJNewsUtils;
@@ -115,6 +158,8 @@
 				4F64D792249323CB0065FE8A /* BJNewsUtilsTests */,
 				4F64D79D249323CB0065FE8A /* BJNewsUtilsUITests */,
 				4F64D778249323C60065FE8A /* Products */,
+				089A06435DB50BFD90800A1E /* Pods */,
+				873313D480E718D67537A415 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +208,168 @@
 			path = BJNewsUtilsUITests;
 			sourceTree = "<group>";
 		};
+		8439A7342595836E009D7FD4 /* 光线 */ = {
+			isa = PBXGroup;
+			children = (
+				8439A73525958376009D7FD4 /* Utils */,
+			);
+			path = "光线";
+			sourceTree = "<group>";
+		};
+		8439A73525958376009D7FD4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8439A74E259585BF009D7FD4 /* Macro */,
+				8439A73D259584A0009D7FD4 /* Resource */,
+				8439A73C259583F7009D7FD4 /* Tools */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8439A73C259583F7009D7FD4 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				84A8938B25958CAB00D342BA /* Cache */,
+				84A8938725958A9600D342BA /* Share */,
+				8439A74A25958588009D7FD4 /* AppInfo */,
+				8439A74625958517009D7FD4 /* Networking */,
+				8439A7452595850D009D7FD4 /* Device */,
+				8439A74425958505009D7FD4 /* Utils */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		8439A73D259584A0009D7FD4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				84A89380259588D600D342BA /* Color */,
+				8439A742259584E2009D7FD4 /* Images */,
+				8439A741259584C9009D7FD4 /* Animation */,
+				8439A740259584C4009D7FD4 /* Videos */,
+				8439A73F259584BB009D7FD4 /* Sound */,
+				8439A73E259584AA009D7FD4 /* Fonts */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		8439A73E259584AA009D7FD4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				84A8937D259588D300D342BA /* GXFont.h */,
+				84A8937E259588D300D342BA /* GXFont.m */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8439A73F259584BB009D7FD4 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		8439A740259584C4009D7FD4 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		8439A741259584C9009D7FD4 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		8439A742259584E2009D7FD4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		8439A74425958505009D7FD4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8439A736259583D3009D7FD4 /* GXUtils.h */,
+				8439A737259583D3009D7FD4 /* GXUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8439A7452595850D009D7FD4 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				8439A739259583E9009D7FD4 /* GXDevice.h */,
+				8439A73A259583E9009D7FD4 /* GXDevice.m */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		8439A74625958517009D7FD4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8439A74725958579009D7FD4 /* GXNetworking.h */,
+				8439A74825958579009D7FD4 /* GXNetworking.m */,
+				84A8938F25958EE200D342BA /* GXSessionRequest.h */,
+				84A8939025958EE200D342BA /* GXSessionRequest.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8439A74A25958588009D7FD4 /* AppInfo */ = {
+			isa = PBXGroup;
+			children = (
+				8439A74B25958592009D7FD4 /* GXAppInfo.h */,
+				8439A74C25958592009D7FD4 /* GXAppInfo.m */,
+			);
+			path = AppInfo;
+			sourceTree = "<group>";
+		};
+		8439A74E259585BF009D7FD4 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				84A89386259589C600D342BA /* PrefixHeader.pch */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		84A89380259588D600D342BA /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				84A89381259588DE00D342BA /* GXColor.h */,
+				84A89382259588DE00D342BA /* GXColor.m */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		84A8938725958A9600D342BA /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				84A8938825958AA800D342BA /* GXShareManager.h */,
+				84A8938925958AA800D342BA /* GXShareManager.m */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		84A8938B25958CAB00D342BA /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				84A8938C25958D9A00D342BA /* GXCahce.h */,
+				84A8938D25958D9A00D342BA /* GXCahce.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		873313D480E718D67537A415 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C80C6D021A1EB7B4B08B01C0 /* libPods-BJNewsUtils.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,6 +377,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F64D7A3249323CB0065FE8A /* Build configuration list for PBXNativeTarget "BJNewsUtils" */;
 			buildPhases = (
+				1DF79B6D03C4260B2F1106C3 /* [CP] Check Pods Manifest.lock */,
 				4F64D773249323C60065FE8A /* Sources */,
 				4F64D774249323C60065FE8A /* Frameworks */,
 				4F64D775249323C60065FE8A /* Resources */,
@@ -225,8 +433,9 @@
 		4F64D76F249323C60065FE8A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = GX;
 				LastUpgradeCheck = 1030;
-				ORGANIZATIONNAME = "新京报社";
+				ORGANIZATIONNAME = "北京光线传媒股份有限公司";
 				TargetAttributes = {
 					4F64D776249323C60065FE8A = {
 						CreatedOnToolsVersion = 10.3;
@@ -288,16 +497,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DF79B6D03C4260B2F1106C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BJNewsUtils-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4F64D773249323C60065FE8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4F8D3ABF24932A6E0090ECD2 /* BJNewsDevice.m in Sources */,
+				84A8938E25958D9A00D342BA /* GXCahce.m in Sources */,
 				4F64D77F249323C60065FE8A /* ViewController.m in Sources */,
+				84A89383259588DE00D342BA /* GXColor.m in Sources */,
 				4F64D78A249323CB0065FE8A /* main.m in Sources */,
 				4F2DDC512493242500DC3DC8 /* BJNewsUtils.m in Sources */,
+				84A8937F259588D300D342BA /* GXFont.m in Sources */,
+				8439A73B259583E9009D7FD4 /* GXDevice.m in Sources */,
 				4F64D77C249323C60065FE8A /* AppDelegate.m in Sources */,
+				8439A74925958579009D7FD4 /* GXNetworking.m in Sources */,
+				84A8939125958EE200D342BA /* GXSessionRequest.m in Sources */,
+				8439A738259583D3009D7FD4 /* GXUtils.m in Sources */,
+				84A8938A25958AA800D342BA /* GXShareManager.m in Sources */,
+				8439A74D25958592009D7FD4 /* GXAppInfo.m in Sources */,
 				4F2DDC552493264F00DC3DC8 /* BJNewsFont.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,17 +710,18 @@
 		};
 		4F64D7A4249323CB0065FE8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DCB03E6B3D8AFB45279EC02 /* Pods-BJNewsUtils.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 42LRDW5LP3;
+				DEVELOPMENT_TEAM = DHR8ACT4J8;
 				INFOPLIST_FILE = BJNewsUtils/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Foundao.TheBeijingNewsApp.BJNewsUtils;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ewang.utilstext;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -485,17 +729,18 @@
 		};
 		4F64D7A5249323CB0065FE8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EC276B0BA06F0D84F93559F /* Pods-BJNewsUtils.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 42LRDW5LP3;
+				DEVELOPMENT_TEAM = DHR8ACT4J8;
 				INFOPLIST_FILE = BJNewsUtils/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Foundao.TheBeijingNewsApp.BJNewsUtils;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ewang.utilstext;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
