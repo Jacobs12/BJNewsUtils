@@ -21,26 +21,76 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - GET
 
 /**
- 发起GET请求
- 
- @param host 主机url
- @param headers 请求头
- @param finished 成功回调
- @param failed 失败回调
+ *  发起GET请求
+ *  参数：无
+ *
+ * @param host 主机名
+ * @param finished 成功回调
+ * @param failed 失败回调
+ */
+- (GXSessionRequest *)GETWithHost:(NSString *)host finished:(void (^)(NSURLResponse * response,NSData * responseData))finished failed:(void (^) (NSURLResponse * response,NSData * responseData))failed;
+
+/**
+ * 发起GET请求
+ * 参数：headers
+ *
+ * @param host 主机url
+ * @param headers 请求头
+ * @param finished 成功回调
+ * @param failed 失败回调
  */
 - (GXSessionRequest *)GETWithHost:(NSString *)host headers:(NSDictionary *)headers finished:(void (^)(NSURLResponse * response,NSData * responseData))finished failed:(void (^) (NSURLResponse * response,NSData * responseData))failed;
 
-#pragma mark - POST
 /**
- 发起POST请求
+ *  发起GET请求，带query参数
+ *  参数：query+headers
+ *
+ * @param host 主机名
+ * @param query query参数
+ * @param headers 请求头
+ * @param finished 成功回调
+ * @param failed 失败回调
+ */
+- (GXSessionRequest *)GETWithHost:(NSString *)host query:(NSDictionary *)query headers:(NSDictionary *)headers finished:(void (^)(NSURLResponse * response,NSData * responseData))finished failed:(void (^) (NSURLResponse * response,NSData * responseData))failed;
 
- @param host 主机url
- @param headers 请求头
- @param parameters 请求体
- @param finished 成功回调
- @param failed 失败回调
+
+
+#pragma mark - POST
+
+/**
+ * 发起POST请求
+ * 参数：parameters
+ *
+ * @param host 主机url
+ * @param parameters 请求体
+ * @param finished 成功回调
+ * @param failed 失败回调
+ */
+- (GXSessionRequest *)POSTWithHost:(NSString *)host parameters:(NSDictionary *)parameters finished:(void (^)(NSURLResponse * response,NSData * responseData))finished failed:(void (^) (NSURLResponse * response,NSData * responseData))failed;
+
+/**
+ * 发起POST请求
+ * 参数：headers + parameters
+ *
+ * @param host 主机url
+ * @param headers 请求头
+ * @param parameters 请求体
+ * @param finished 成功回调
+ * @param failed 失败回调
  */
 - (GXSessionRequest *)POSTWithHost:(NSString *)host headers:(NSDictionary *)headers parameters:(NSDictionary *)parameters finished:(void (^)(NSURLResponse * response,NSData * responseData))finished failed:(void (^) (NSURLResponse * response,NSData * responseData))failed;
+
+/**
+ * 发起POST请求
+ * 参数：query + headers + parameters
+ *
+ * @param host 主机url
+ * @param headers 请求头
+ * @param parameters 请求体
+ * @param finished 成功回调
+ * @param failed 失败回调
+ */
+- (GXSessionRequest *)POSTWithHost:(NSString *)host query:(NSDictionary *)query headers:(NSDictionary *)headers parameters:(NSDictionary *)parameters finished:(void (^)(NSURLResponse * response,NSData * responseData))finished failed:(void (^) (NSURLResponse * response,NSData * responseData))failed;
 
 #pragma mark - PUT
 /**

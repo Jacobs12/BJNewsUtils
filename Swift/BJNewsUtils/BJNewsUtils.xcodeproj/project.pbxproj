@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C57B80D05B0FE284268EEE9 /* libPods-BJNewsUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0C6532777E24E2B1B5C3B5 /* libPods-BJNewsUtils.a */; };
 		8404D1632A2F2B510095E0B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404D1622A2F2B510095E0B5 /* AppDelegate.swift */; };
 		8404D1652A2F2B510095E0B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404D1642A2F2B510095E0B5 /* ViewController.swift */; };
 		8404D1672A2F2B520095E0B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8404D1662A2F2B520095E0B5 /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 		8404D1752A2F2B520095E0B5 /* BJNewsUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404D1742A2F2B520095E0B5 /* BJNewsUtilsTests.swift */; };
 		8404D17F2A2F2B520095E0B5 /* BJNewsUtilsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404D17E2A2F2B520095E0B5 /* BJNewsUtilsUITests.swift */; };
 		8404D1812A2F2B520095E0B5 /* BJNewsUtilsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404D1802A2F2B520095E0B5 /* BJNewsUtilsUITestsLaunchTests.swift */; };
+		8404D1922A2F2D760095E0B5 /* GXNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404D1912A2F2D760095E0B5 /* GXNetworking.swift */; };
+		8404D1942A2F2D900095E0B5 /* GXSessionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404D1932A2F2D900095E0B5 /* GXSessionRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		440D02140039D7C44278F2F2 /* Pods-BJNewsUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJNewsUtils.debug.xcconfig"; path = "Target Support Files/Pods-BJNewsUtils/Pods-BJNewsUtils.debug.xcconfig"; sourceTree = "<group>"; };
 		8404D15F2A2F2B510095E0B5 /* BJNewsUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BJNewsUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8404D1622A2F2B510095E0B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8404D1642A2F2B510095E0B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +49,10 @@
 		8404D17A2A2F2B520095E0B5 /* BJNewsUtilsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BJNewsUtilsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8404D17E2A2F2B520095E0B5 /* BJNewsUtilsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BJNewsUtilsUITests.swift; sourceTree = "<group>"; };
 		8404D1802A2F2B520095E0B5 /* BJNewsUtilsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BJNewsUtilsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8404D1912A2F2D760095E0B5 /* GXNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GXNetworking.swift; sourceTree = "<group>"; };
+		8404D1932A2F2D900095E0B5 /* GXSessionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GXSessionRequest.swift; sourceTree = "<group>"; };
+		BC0C6532777E24E2B1B5C3B5 /* libPods-BJNewsUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BJNewsUtils.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDFDCDDE3F4F3E7E16F99DEA /* Pods-BJNewsUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJNewsUtils.release.xcconfig"; path = "Target Support Files/Pods-BJNewsUtils/Pods-BJNewsUtils.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C57B80D05B0FE284268EEE9 /* libPods-BJNewsUtils.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C61FD4BAA33A80181B80F9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC0C6532777E24E2B1B5C3B5 /* libPods-BJNewsUtils.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8404D1562A2F2B510095E0B5 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +96,8 @@
 				8404D1732A2F2B520095E0B5 /* BJNewsUtilsTests */,
 				8404D17D2A2F2B520095E0B5 /* BJNewsUtilsUITests */,
 				8404D1602A2F2B510095E0B5 /* Products */,
+				F169E4321F9EDF2495AC76FE /* Pods */,
+				4C61FD4BAA33A80181B80F9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +114,7 @@
 		8404D1612A2F2B510095E0B5 /* BJNewsUtils */ = {
 			isa = PBXGroup;
 			children = (
+				8404D18D2A2F2C420095E0B5 /* 工具类 */,
 				8404D1622A2F2B510095E0B5 /* AppDelegate.swift */,
 				8404D1642A2F2B510095E0B5 /* ViewController.swift */,
 				8404D1662A2F2B520095E0B5 /* Assets.xcassets */,
@@ -121,6 +141,40 @@
 			path = BJNewsUtilsUITests;
 			sourceTree = "<group>";
 		};
+		8404D18D2A2F2C420095E0B5 /* 工具类 */ = {
+			isa = PBXGroup;
+			children = (
+				8404D18E2A2F2C4B0095E0B5 /* 网络类 */,
+			);
+			path = "工具类";
+			sourceTree = "<group>";
+		};
+		8404D18E2A2F2C4B0095E0B5 /* 网络类 */ = {
+			isa = PBXGroup;
+			children = (
+				8404D1902A2F2D4D0095E0B5 /* Networking */,
+			);
+			path = "网络类";
+			sourceTree = "<group>";
+		};
+		8404D1902A2F2D4D0095E0B5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8404D1912A2F2D760095E0B5 /* GXNetworking.swift */,
+				8404D1932A2F2D900095E0B5 /* GXSessionRequest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F169E4321F9EDF2495AC76FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				440D02140039D7C44278F2F2 /* Pods-BJNewsUtils.debug.xcconfig */,
+				FDFDCDDE3F4F3E7E16F99DEA /* Pods-BJNewsUtils.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,6 +182,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8404D1842A2F2B520095E0B5 /* Build configuration list for PBXNativeTarget "BJNewsUtils" */;
 			buildPhases = (
+				22E85483EDF9C2BFA597D1DB /* [CP] Check Pods Manifest.lock */,
 				8404D15B2A2F2B510095E0B5 /* Sources */,
 				8404D15C2A2F2B510095E0B5 /* Frameworks */,
 				8404D15D2A2F2B510095E0B5 /* Resources */,
@@ -246,11 +301,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		22E85483EDF9C2BFA597D1DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BJNewsUtils-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8404D15B2A2F2B510095E0B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8404D1922A2F2D760095E0B5 /* GXNetworking.swift in Sources */,
+				8404D1942A2F2D900095E0B5 /* GXSessionRequest.swift in Sources */,
 				8404D1652A2F2B510095E0B5 /* ViewController.swift in Sources */,
 				8404D1632A2F2B510095E0B5 /* AppDelegate.swift in Sources */,
 			);
@@ -417,6 +499,7 @@
 		};
 		8404D1852A2F2B520095E0B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 440D02140039D7C44278F2F2 /* Pods-BJNewsUtils.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -444,6 +527,7 @@
 		};
 		8404D1862A2F2B520095E0B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDFDCDDE3F4F3E7E16F99DEA /* Pods-BJNewsUtils.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

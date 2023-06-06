@@ -50,7 +50,20 @@ static GXNetworking * gx_net_manager = nil;
     }
 }
 
+#pragma mark -
 #pragma mark - GET
+
+/**
+ *  发起GET请求，无参数
+ *
+ * @param host 主机名
+ * @param finished 成功回调
+ * @param failed 失败回调
+ */
+- (GXSessionRequest *)GETWithHost:(NSString *)host finished:(void (^)(NSURLResponse * response,NSData * responseData))finished failed:(void (^) (NSURLResponse * response,NSData * responseData))failed{
+    GXSessionRequest * request = [self GETWithHost:host headers:@{} finished:finished failed:failed];
+    return request;
+}
 
 /**
  发起GET请求
@@ -78,7 +91,38 @@ static GXNetworking * gx_net_manager = nil;
     return request;
 }
 
+/**
+ *  发起GET请求，带query参数
+ *
+ * @param host 主机名
+ * @param query query参数
+ * @param headers 请求头
+ * @param finished 成功回调
+ * @param failed 失败回调
+ */
+- (GXSessionRequest *)GETWithHost:(NSString *)host query:(NSDictionary *)query headers:(NSDictionary *)headers finished:(void (^)(NSURLResponse * response,NSData * responseData))finished failed:(void (^) (NSURLResponse * response,NSData * responseData))failed{
+//    添加query
+    NSString * url = [self urlWithHost:host query:query];
+    GXSessionRequest * request = [self GETWithHost:url headers:headers finished:finished failed:failed];
+    return request;
+}
+
 #pragma mark - POST
+
+/**
+ * 发起POST请求
+ * 参数：parameters
+ *
+ * @param host 主机url
+ * @param parameters 请求体
+ * @param finished 成功回调
+ * @param failed 失败回调
+ */
+- (GXSessionRequest *)POSTWithHost:(NSString *)host parameters:(NSDictionary *)parameters finished:(void (^)(NSURLResponse * response,NSData * responseData))finished failed:(void (^) (NSURLResponse * response,NSData * responseData))failed{
+    GXSessionRequest * request = [self POSTWithHost:host headers:@{} parameters:parameters finished:finished failed:failed];
+    return request;
+}
+
 /**
  发起POST请求
 
@@ -102,6 +146,22 @@ static GXNetworking * gx_net_manager = nil;
             failed(response,responseData);
         }
     }];
+    return request;
+}
+
+/**
+ * 发起POST请求
+ * 参数：query + headers + parameters
+ *
+ * @param host 主机url
+ * @param headers 请求头
+ * @param parameters 请求体
+ * @param finished 成功回调
+ * @param failed 失败回调
+ */
+- (GXSessionRequest *)POSTWithHost:(NSString *)host query:(NSDictionary *)query headers:(NSDictionary *)headers parameters:(NSDictionary *)parameters finished:(void (^)(NSURLResponse * response,NSData * responseData))finished failed:(void (^) (NSURLResponse * response,NSData * responseData))failed{
+    NSString * url = [self urlWithHost:host query:query];
+    GXSessionRequest * request = [self POSTWithHost:url headers:headers parameters:parameters finished:finished failed:failed];
     return request;
 }
 
@@ -156,6 +216,31 @@ static GXNetworking * gx_net_manager = nil;
         }
     }];
     return request;
+}
+
+#pragma mark - utils
+
+- (NSString *)urlWithHost:(NSString *)host query:(NSDictionary *)query{
+    NSMutableString * url = [[NSMutableString alloc]initWithString:host];
+    if(query == nil || ![query isKindOfClass:[NSDictionary class]]){
+        query = @{};
+    }
+    for(int i=0;i<query.allKeys.count;i++){
+        if(i == 0){
+            [url appendString:@"?"];
+        }
+        NSString * key = [NSString stringWithFormat:@"%@",query.allKeys[i]];
+        NSString * value = [NSString stringWithFormat:@"%@",[query objectForKey:key]];
+        NSString * result = [NSString stringWithFormat:@"%@=%@",key,value];
+//        转义
+        NSCharacterSet * encodeSet = [NSCharacterSet URLQueryAllowedCharacterSet];
+        result = [result stringByAddingPercentEncodingWithAllowedCharacters:encodeSet];
+        [url appendString:result];
+        if(i < query.allKeys.count - 1){
+            [url appendString:@"&"];
+        }
+    }
+    return url;
 }
 
 
